@@ -64,6 +64,7 @@ module.exports = {
     }
   },
   env: {
+   localDomain: process.env.LOCAL_DOMAIN || 'http://localhost:3000',
    chatApiUrl: process.env.API_URL || '***'
  }
 }

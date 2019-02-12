@@ -17,7 +17,7 @@ export default {
 	},
 	computed: {
 		...mapState('chat', {
-			user: state => state.store.user,
+			user: state => state.user,
 			testes: state => state.testes,
 		})
 	},
