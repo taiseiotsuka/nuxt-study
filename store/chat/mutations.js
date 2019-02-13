@@ -1,20 +1,15 @@
-const TEST_MUTATION = (state, payload) => {
-	state.store.user = payload.name
-	console.log(state.store.user)
+const CHAT_LIST = (state, payload) => {
+	state.chatList = payload
 }
-const TES_TES = (state, payload) => {
-	state.testes = payload
-	console.log(state.testes)
+const CHANGE_COMMENT = (state, payload) => {
+	state.chatList = Object.assign({}, state.chatList, payload)
 }
-const GREEN = (state, payload) => {
-	state.store.user = payload
-	// console.log(state.testes)
+const MESSAGE_CLEAR = (state, payload) => {
+	console.log(state.message)
 }
-
-
 
 export default {
-  TEST_MUTATION,
-  TES_TES,
-  GREEN,
+  CHAT_LIST,
+  CHANGE_COMMENT,
+  MESSAGE_CLEAR,
 }

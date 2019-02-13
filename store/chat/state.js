@@ -1,5 +1,3 @@
 export default () => ({
-  list: [],
-  car: {},
-  user: 'Hello'
+	message:'set get test'
 })
